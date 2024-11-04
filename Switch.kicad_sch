@@ -463,7 +463,7 @@
 				)
 			)
 		)
-		(symbol "Simulation_SPICE:NMOS"
+		(symbol "locallib:MOT90N03D"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0)
@@ -471,8 +471,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+			(property "Reference" "Q5"
+				(at 6.2538 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -480,8 +480,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
+			(property "Value" "MOT90N03D"
+				(at 6.2538 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -489,7 +489,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 				(at 5.08 2.54 0)
 				(effects
 					(font
@@ -543,6 +543,15 @@
 					(hide yes)
 				)
 			)
+			(property "mpn" "MOT90N03D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
 				(at 0 0 0)
 				(effects
@@ -552,7 +561,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NMOS_0_1"
+			(symbol "MOT90N03D_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -719,11 +728,11 @@
 					)
 				)
 			)
-			(symbol "NMOS_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
+			(symbol "MOT90N03D_1_1"
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "D"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -738,10 +747,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "G"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3474,9 +3483,21 @@
 		)
 		(uuid "ff2e089e-d05e-4f1b-931c-27ed02fbd24c")
 	)
+	(hierarchical_label "PA10"
+		(shape input)
+		(at 156.21 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "09a65a00-994b-418d-a6ef-18ff4c984d2f")
+	)
 	(hierarchical_label "PB0"
 		(shape input)
-		(at 156.21 78.74 180)
+		(at 105.41 39.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3486,9 +3507,33 @@
 		)
 		(uuid "347a6cb8-30c8-41af-b367-e080d792ee5a")
 	)
-	(hierarchical_label "PB1"
+	(hierarchical_label "PA11"
 		(shape input)
 		(at 156.21 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3acba728-3049-4608-b0d5-454215670a67")
+	)
+	(hierarchical_label "PA12"
+		(shape input)
+		(at 156.21 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "536e35ad-3310-4aeb-99df-90a81e7441e3")
+	)
+	(hierarchical_label "PB1"
+		(shape input)
+		(at 105.41 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3500,7 +3545,7 @@
 	)
 	(hierarchical_label "PA7"
 		(shape input)
-		(at 105.41 115.57 180)
+		(at 50.8 193.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3512,7 +3557,7 @@
 	)
 	(hierarchical_label "PB2"
 		(shape input)
-		(at 156.21 153.67 180)
+		(at 105.41 115.57 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3521,6 +3566,18 @@
 			(justify right)
 		)
 		(uuid "592e3c93-47b2-4e6b-a4ba-57a6b8e1b3d7")
+	)
+	(hierarchical_label "PB9"
+		(shape input)
+		(at 156.21 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67ffce52-84db-4055-b194-264a02be0dc1")
 	)
 	(hierarchical_label "VCC_12"
 		(shape input)
@@ -3536,7 +3593,7 @@
 	)
 	(hierarchical_label "PA4"
 		(shape input)
-		(at 50.8 193.04 180)
+		(at 50.8 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3548,7 +3605,7 @@
 	)
 	(hierarchical_label "PB15"
 		(shape input)
-		(at 207.01 193.04 180)
+		(at 207.01 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3560,7 +3617,7 @@
 	)
 	(hierarchical_label "PB10"
 		(shape input)
-		(at 156.21 193.04 180)
+		(at 105.41 153.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3572,7 +3629,7 @@
 	)
 	(hierarchical_label "PA3"
 		(shape input)
-		(at 50.8 153.67 180)
+		(at 50.8 39.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3582,33 +3639,9 @@
 		)
 		(uuid "ac7dd69c-9264-4225-8fe0-7c61d4aa4a0d")
 	)
-	(hierarchical_label "PA2"
-		(shape input)
-		(at 50.8 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b06ec767-bcf0-4a97-9d89-785f2fec3f56")
-	)
-	(hierarchical_label "PA0"
-		(shape input)
-		(at 50.8 39.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b0b61889-14c6-4f6e-a055-a9fe6ce15cd7")
-	)
 	(hierarchical_label "PA8"
 		(shape input)
-		(at 105.41 153.67 180)
+		(at 207.01 39.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3618,21 +3651,9 @@
 		)
 		(uuid "c3e649d3-2ece-43ea-b47b-d17f1d7cf554")
 	)
-	(hierarchical_label "PA1"
-		(shape input)
-		(at 50.8 78.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c7fcc362-c7bc-4d6d-bbae-4d742924b769")
-	)
 	(hierarchical_label "PB14"
 		(shape input)
-		(at 207.01 153.67 180)
+		(at 207.01 115.57 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3644,7 +3665,7 @@
 	)
 	(hierarchical_label "PA5"
 		(shape input)
-		(at 105.41 39.37 180)
+		(at 50.8 115.57 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3656,7 +3677,7 @@
 	)
 	(hierarchical_label "PB11"
 		(shape input)
-		(at 207.01 39.37 180)
+		(at 105.41 193.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3668,7 +3689,7 @@
 	)
 	(hierarchical_label "PA6"
 		(shape input)
-		(at 105.41 78.74 180)
+		(at 50.8 153.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3680,7 +3701,7 @@
 	)
 	(hierarchical_label "PB13"
 		(shape input)
-		(at 207.01 115.57 180)
+		(at 207.01 153.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3692,7 +3713,7 @@
 	)
 	(hierarchical_label "PA9"
 		(shape input)
-		(at 105.41 193.04 180)
+		(at 156.21 193.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3704,7 +3725,7 @@
 	)
 	(hierarchical_label "PB12"
 		(shape input)
-		(at 207.01 78.74 180)
+		(at 207.01 193.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3714,20 +3735,8 @@
 		)
 		(uuid "fe2d1693-6590-4181-9416-af03543be0d2")
 	)
-	(hierarchical_label "PA10"
-		(shape input)
-		(at 156.21 39.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fecdc18e-5a4f-47d6-899c-574737369bfe")
-	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 228.6 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3737,7 +3746,7 @@
 		(fields_autoplaced yes)
 		(uuid "0081a669-f7fa-4470-a7c3-477ddaf6a306")
 		(property "Reference" "Q17"
-			(at 234.8538 38.0999 0)
+			(at 234.95 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3745,8 +3754,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 234.8538 40.6399 0)
+		(property "Value" "MOT90N03D"
+			(at 234.95 40.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3754,7 +3763,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 233.68 36.83 0)
 			(effects
 				(font
@@ -3808,6 +3817,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 228.6 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4b32e7cc-3851-4fcc-86dc-a40234dd0a04")
 		)
@@ -3827,7 +3845,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 72.39 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3837,7 +3855,7 @@
 		(fields_autoplaced yes)
 		(uuid "00dd6fd8-f17a-4973-ae1e-cfe1bacb7138")
 		(property "Reference" "Q2"
-			(at 78.6438 77.4699 0)
+			(at 78.74 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3845,8 +3863,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 78.6438 80.0099 0)
+		(property "Value" "MOT90N03D"
+			(at 78.74 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3854,7 +3872,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 77.47 76.2 0)
 			(effects
 				(font
@@ -3908,6 +3926,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 72.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5e8ee211-dd81-4c3e-a585-ccc4d130fece")
 		)
@@ -3954,7 +3981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 74.93 138.43 0)
 			(effects
 				(font
@@ -4024,7 +4051,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 180.34 105.41 90)
 			(effects
 				(font
@@ -4094,7 +4121,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 66.04 196.85 0)
 			(effects
 				(font
@@ -4154,7 +4181,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 218.44 113.03 90)
 			(effects
 				(font
@@ -4162,7 +4189,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 218.44 115.57 0)
 			(effects
 				(font
@@ -4222,7 +4249,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 62.23 76.2 90)
 			(effects
 				(font
@@ -4230,7 +4257,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 62.23 78.74 0)
 			(effects
 				(font
@@ -4432,7 +4459,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 222.25 82.55 0)
 			(effects
 				(font
@@ -4492,7 +4519,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 62.23 36.83 90)
 			(effects
 				(font
@@ -4500,7 +4527,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 62.23 39.37 0)
 			(effects
 				(font
@@ -4560,7 +4587,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 167.64 36.83 90)
 			(effects
 				(font
@@ -4568,7 +4595,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 167.64 39.37 0)
 			(effects
 				(font
@@ -4638,7 +4665,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 74.93 105.41 90)
 			(effects
 				(font
@@ -4708,7 +4735,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 171.45 82.55 0)
 			(effects
 				(font
@@ -4751,7 +4778,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 177.8 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4761,7 +4788,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e53320a-645e-42bc-ab93-14a821954294")
 		(property "Reference" "Q12"
-			(at 184.0538 38.0999 0)
+			(at 184.15 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4769,8 +4796,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 184.0538 40.6399 0)
+		(property "Value" "MOT90N03D"
+			(at 184.15 40.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4778,7 +4805,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 182.88 36.83 0)
 			(effects
 				(font
@@ -4832,6 +4859,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 177.8 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8e9da36e-8775-40e9-a11e-8ef4b798f004")
 		)
@@ -4878,7 +4914,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 231.14 63.5 0)
 			(effects
 				(font
@@ -5014,7 +5050,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 231.14 29.21 90)
 			(effects
 				(font
@@ -5206,7 +5242,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 167.64 190.5 90)
 			(effects
 				(font
@@ -5214,7 +5250,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 167.64 193.04 0)
 			(effects
 				(font
@@ -5257,7 +5293,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 127 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5267,7 +5303,7 @@
 		(fields_autoplaced yes)
 		(uuid "1791d6b2-e5f0-428f-8bc0-122c9d5c78cd")
 		(property "Reference" "Q6"
-			(at 133.2538 114.2999 0)
+			(at 133.35 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5275,8 +5311,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 133.2538 116.8399 0)
+		(property "Value" "MOT90N03D"
+			(at 133.35 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5284,7 +5320,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 132.08 113.03 0)
 			(effects
 				(font
@@ -5338,6 +5374,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 127 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bcb28b7f-39b1-40b1-85dc-1f72c2c4b029")
 		)
@@ -5384,7 +5429,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 66.04 82.55 0)
 			(effects
 				(font
@@ -5454,7 +5499,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 180.34 29.21 90)
 			(effects
 				(font
@@ -5590,7 +5635,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 180.34 143.51 90)
 			(effects
 				(font
@@ -5633,7 +5678,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 228.6 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5643,7 +5688,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ec6ddcc-a3d5-4eb4-b836-e533ec07c88f")
 		(property "Reference" "Q16"
-			(at 234.8538 114.2999 0)
+			(at 234.95 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5651,8 +5696,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 234.8538 116.8399 0)
+		(property "Value" "MOT90N03D"
+			(at 234.95 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5660,7 +5705,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 233.68 113.03 0)
 			(effects
 				(font
@@ -5707,6 +5752,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 228.6 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mpn" "MOT90N03D"
+			(at 228.6 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5865,7 +5919,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 72.39 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5875,7 +5929,7 @@
 		(fields_autoplaced yes)
 		(uuid "225ad2bb-05ce-496d-8b7e-ae9b850e9e34")
 		(property "Reference" "Q4"
-			(at 78.6438 152.3999 0)
+			(at 78.74 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5883,8 +5937,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 78.6438 154.9399 0)
+		(property "Value" "MOT90N03D"
+			(at 78.74 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5892,7 +5946,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 77.47 151.13 0)
 			(effects
 				(font
@@ -5946,6 +6000,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 72.39 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b880c623-9763-4c16-84ca-536890af9739")
 		)
@@ -5992,7 +6055,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 129.54 63.5 0)
 			(effects
 				(font
@@ -6128,7 +6191,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 317.5 137.16 0)
 			(effects
 				(font
@@ -6172,16 +6235,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 317.5 93.98 180)
+		(at 317.5 91.44 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "292ae5ab-aed4-4972-a992-515abcf4553e")
 		(property "Reference" "J4"
-			(at 318.77 91.4399 0)
+			(at 318.77 93.9801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6190,7 +6253,7 @@
 			)
 		)
 		(property "Value" "C1,2"
-			(at 318.77 93.9799 0)
+			(at 318.77 91.4401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6198,8 +6261,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 317.5 93.98 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 317.5 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6208,7 +6271,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 317.5 93.98 0)
+			(at 317.5 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6217,7 +6280,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 317.5 93.98 0)
+			(at 317.5 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6268,7 +6331,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 129.54 138.43 0)
 			(effects
 				(font
@@ -6328,7 +6391,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 218.44 36.83 90)
 			(effects
 				(font
@@ -6336,7 +6399,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 218.44 39.37 0)
 			(effects
 				(font
@@ -6396,7 +6459,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 116.84 76.2 90)
 			(effects
 				(font
@@ -6404,7 +6467,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 78.74 0)
 			(effects
 				(font
@@ -6474,7 +6537,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 180.34 138.43 0)
 			(effects
 				(font
@@ -6600,7 +6663,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 218.44 151.13 90)
 			(effects
 				(font
@@ -6608,7 +6671,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 218.44 153.67 0)
 			(effects
 				(font
@@ -6678,7 +6741,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 129.54 182.88 90)
 			(effects
 				(font
@@ -6814,7 +6877,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 231.14 138.43 0)
 			(effects
 				(font
@@ -6874,7 +6937,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 116.84 151.13 90)
 			(effects
 				(font
@@ -6882,7 +6945,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 153.67 0)
 			(effects
 				(font
@@ -7018,7 +7081,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 74.93 29.21 90)
 			(effects
 				(font
@@ -7286,7 +7349,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 180.34 100.33 0)
 			(effects
 				(font
@@ -7329,7 +7392,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 127 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7339,7 +7402,7 @@
 		(fields_autoplaced yes)
 		(uuid "55588aaa-65bd-4100-8746-8414cbdb411c")
 		(property "Reference" "Q10"
-			(at 133.2538 77.4699 0)
+			(at 133.35 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7347,8 +7410,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 133.2538 80.0099 0)
+		(property "Value" "MOT90N03D"
+			(at 133.35 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7356,7 +7419,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 132.08 76.2 0)
 			(effects
 				(font
@@ -7410,6 +7473,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 127 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cd166f39-aeb5-4109-b6a6-b44d36e99770")
 		)
@@ -7456,7 +7528,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 74.93 68.58 90)
 			(effects
 				(font
@@ -7526,7 +7598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 231.14 100.33 0)
 			(effects
 				(font
@@ -7569,7 +7641,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 177.8 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7579,7 +7651,7 @@
 		(fields_autoplaced yes)
 		(uuid "61638bdb-33d0-4f2d-965a-789628f6477e")
 		(property "Reference" "Q11"
-			(at 184.0538 114.2999 0)
+			(at 184.15 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7587,8 +7659,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 184.0538 116.8399 0)
+		(property "Value" "MOT90N03D"
+			(at 184.15 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7596,7 +7668,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 182.88 113.03 0)
 			(effects
 				(font
@@ -7650,6 +7722,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 177.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "202e4203-08e8-4b42-af8e-253c8cec6b6b")
 		)
@@ -7696,7 +7777,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 222.25 196.85 0)
 			(effects
 				(font
@@ -7766,7 +7847,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 74.93 177.8 0)
 			(effects
 				(font
@@ -7836,7 +7917,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 171.45 157.48 0)
 			(effects
 				(font
@@ -7906,7 +7987,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 222.25 43.18 0)
 			(effects
 				(font
@@ -7976,7 +8057,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 180.34 177.8 0)
 			(effects
 				(font
@@ -8046,7 +8127,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 129.54 24.13 0)
 			(effects
 				(font
@@ -8106,7 +8187,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 218.44 190.5 90)
 			(effects
 				(font
@@ -8114,7 +8195,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 218.44 193.04 0)
 			(effects
 				(font
@@ -8382,7 +8463,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 120.65 157.48 0)
 			(effects
 				(font
@@ -8518,7 +8599,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 317.5 130.81 0)
 			(effects
 				(font
@@ -8588,7 +8669,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 231.14 68.58 90)
 			(effects
 				(font
@@ -8658,7 +8739,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 317.5 119.38 0)
 			(effects
 				(font
@@ -8728,7 +8809,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 171.45 43.18 0)
 			(effects
 				(font
@@ -8788,7 +8869,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 116.84 190.5 90)
 			(effects
 				(font
@@ -8796,7 +8877,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 193.04 0)
 			(effects
 				(font
@@ -8866,7 +8947,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 129.54 68.58 90)
 			(effects
 				(font
@@ -8936,7 +9017,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 171.45 196.85 0)
 			(effects
 				(font
@@ -9045,7 +9126,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 127 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9055,7 +9136,7 @@
 		(fields_autoplaced yes)
 		(uuid "876c15c2-f268-4e7e-b300-ed3eae276536")
 		(property "Reference" "Q8"
-			(at 133.2538 152.3999 0)
+			(at 133.35 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9063,8 +9144,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 133.2538 154.9399 0)
+		(property "Value" "MOT90N03D"
+			(at 133.35 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9072,7 +9153,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -9119,6 +9200,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 127 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mpn" "MOT90N03D"
+			(at 127 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9238,7 +9328,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 129.54 143.51 90)
 			(effects
 				(font
@@ -9298,7 +9388,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 116.84 113.03 90)
 			(effects
 				(font
@@ -9306,7 +9396,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 115.57 0)
 			(effects
 				(font
@@ -9415,7 +9505,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 72.39 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9425,7 +9515,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f6faeb5-5b47-4bc3-b840-f4dd8abb691b")
 		(property "Reference" "Q1"
-			(at 78.6438 38.0999 0)
+			(at 78.74 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9433,8 +9523,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 78.6438 40.6399 0)
+		(property "Value" "MOT90N03D"
+			(at 78.74 40.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9442,7 +9532,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 77.47 36.83 0)
 			(effects
 				(font
@@ -9489,6 +9579,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mpn" "MOT90N03D"
+			(at 72.39 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9608,7 +9707,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 120.65 196.85 0)
 			(effects
 				(font
@@ -9651,7 +9750,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 228.6 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9661,7 +9760,7 @@
 		(fields_autoplaced yes)
 		(uuid "925638e8-86aa-44f2-862a-a60d3d65cbf0")
 		(property "Reference" "Q18"
-			(at 234.8538 152.3999 0)
+			(at 234.95 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9669,8 +9768,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 234.8538 154.9399 0)
+		(property "Value" "MOT90N03D"
+			(at 234.95 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9678,7 +9777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 233.68 151.13 0)
 			(effects
 				(font
@@ -9732,6 +9831,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 228.6 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "628d5e7a-09b0-4d12-b2a8-fe549f90373b")
 		)
@@ -9778,7 +9886,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 222.25 119.38 0)
 			(effects
 				(font
@@ -9848,7 +9956,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 317.5 143.51 0)
 			(effects
 				(font
@@ -9892,16 +10000,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 317.5 106.68 180)
+		(at 317.5 104.14 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "98baffd8-f9d5-4c1d-93c7-24df2edcf123")
 		(property "Reference" "J6"
-			(at 318.77 104.1399 0)
+			(at 318.77 106.6801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9910,7 +10018,7 @@
 			)
 		)
 		(property "Value" "C1,2"
-			(at 318.77 106.6799 0)
+			(at 318.77 104.1401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9918,8 +10026,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 317.5 106.68 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 317.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9928,7 +10036,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 317.5 106.68 0)
+			(at 317.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9937,7 +10045,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 317.5 106.68 0)
+			(at 317.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10120,7 +10228,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 231.14 182.88 90)
 			(effects
 				(font
@@ -10180,7 +10288,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 62.23 190.5 90)
 			(effects
 				(font
@@ -10188,7 +10296,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 62.23 193.04 0)
 			(effects
 				(font
@@ -10258,7 +10366,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 120.65 43.18 0)
 			(effects
 				(font
@@ -10450,7 +10558,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 116.84 36.83 90)
 			(effects
 				(font
@@ -10458,7 +10566,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 39.37 0)
 			(effects
 				(font
@@ -10528,7 +10636,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 120.65 82.55 0)
 			(effects
 				(font
@@ -10588,7 +10696,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 62.23 151.13 90)
 			(effects
 				(font
@@ -10596,7 +10704,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 62.23 153.67 0)
 			(effects
 				(font
@@ -10666,7 +10774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 74.93 63.5 0)
 			(effects
 				(font
@@ -10726,7 +10834,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 167.64 113.03 90)
 			(effects
 				(font
@@ -10734,7 +10842,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 167.64 115.57 0)
 			(effects
 				(font
@@ -10777,7 +10885,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 127 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10787,7 +10895,7 @@
 		(fields_autoplaced yes)
 		(uuid "a556034a-1bf9-481a-a67b-439e7bb8fd2b")
 		(property "Reference" "Q9"
-			(at 133.2538 191.7699 0)
+			(at 133.35 191.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10795,8 +10903,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 133.2538 194.3099 0)
+		(property "Value" "MOT90N03D"
+			(at 133.35 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10804,7 +10912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 132.08 190.5 0)
 			(effects
 				(font
@@ -10858,6 +10966,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 127 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "37ae588b-5d3c-465c-b704-519f88d64e8f")
 		)
@@ -10877,7 +10994,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 72.39 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10887,7 +11004,7 @@
 		(fields_autoplaced yes)
 		(uuid "a59b0c8c-6e89-4cbf-9d22-df6300e1eaa4")
 		(property "Reference" "Q3"
-			(at 78.6438 114.2999 0)
+			(at 78.74 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10895,8 +11012,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 78.6438 116.8399 0)
+		(property "Value" "MOT90N03D"
+			(at 78.74 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10904,7 +11021,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 77.47 113.03 0)
 			(effects
 				(font
@@ -10958,6 +11075,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 72.39 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b4aa6421-1e76-4d9a-b48a-c80249e8f489")
 		)
@@ -10977,7 +11103,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 177.8 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10987,7 +11113,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5bc463f-775c-412b-bbb9-6effddfe16fa")
 		(property "Reference" "Q15"
-			(at 184.0538 77.4699 0)
+			(at 184.15 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10995,8 +11121,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 184.0538 80.0099 0)
+		(property "Value" "MOT90N03D"
+			(at 184.15 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11004,7 +11130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 182.88 76.2 0)
 			(effects
 				(font
@@ -11051,6 +11177,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 177.8 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mpn" "MOT90N03D"
+			(at 177.8 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11143,7 +11278,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 228.6 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11153,7 +11288,7 @@
 		(fields_autoplaced yes)
 		(uuid "a96a2918-c546-435b-be4a-d7af893a1ab6")
 		(property "Reference" "Q20"
-			(at 234.8538 77.4699 0)
+			(at 234.95 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11161,8 +11296,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 234.8538 80.0099 0)
+		(property "Value" "MOT90N03D"
+			(at 234.95 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11170,7 +11305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 233.68 76.2 0)
 			(effects
 				(font
@@ -11217,6 +11352,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 228.6 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mpn" "MOT90N03D"
+			(at 228.6 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11326,7 +11470,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 167.64 151.13 90)
 			(effects
 				(font
@@ -11334,7 +11478,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 167.64 153.67 0)
 			(effects
 				(font
@@ -11602,7 +11746,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 129.54 177.8 0)
 			(effects
 				(font
@@ -11672,7 +11816,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 74.93 143.51 90)
 			(effects
 				(font
@@ -11742,7 +11886,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 231.14 24.13 0)
 			(effects
 				(font
@@ -11812,7 +11956,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 74.93 24.13 0)
 			(effects
 				(font
@@ -11855,7 +11999,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 177.8 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11865,7 +12009,7 @@
 		(fields_autoplaced yes)
 		(uuid "b20ce412-b1fe-4fdc-be3b-134d9990b5ea")
 		(property "Reference" "Q14"
-			(at 184.0538 191.7699 0)
+			(at 184.15 191.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11873,8 +12017,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 184.0538 194.3099 0)
+		(property "Value" "MOT90N03D"
+			(at 184.15 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11882,7 +12026,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 182.88 190.5 0)
 			(effects
 				(font
@@ -11929,6 +12073,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 177.8 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mpn" "MOT90N03D"
+			(at 177.8 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12048,7 +12201,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 171.45 119.38 0)
 			(effects
 				(font
@@ -12091,7 +12244,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 127 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12101,7 +12254,7 @@
 		(fields_autoplaced yes)
 		(uuid "baf6e077-a7fc-4960-a6f3-880f47654cd5")
 		(property "Reference" "Q7"
-			(at 133.2538 38.0999 0)
+			(at 133.35 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12109,8 +12262,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 133.2538 40.6399 0)
+		(property "Value" "MOT90N03D"
+			(at 133.35 40.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12118,7 +12271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 132.08 36.83 0)
 			(effects
 				(font
@@ -12172,6 +12325,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 127 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "eba465cb-e062-4c28-b0f8-e0c925989c42")
 		)
@@ -12218,7 +12380,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 129.54 100.33 0)
 			(effects
 				(font
@@ -12327,7 +12489,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 177.8 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12337,7 +12499,7 @@
 		(fields_autoplaced yes)
 		(uuid "bfe8370c-077b-4b1c-a911-7900f28c9f27")
 		(property "Reference" "Q13"
-			(at 184.0538 152.3999 0)
+			(at 184.15 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12345,8 +12507,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 184.0538 154.9399 0)
+		(property "Value" "MOT90N03D"
+			(at 184.15 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12354,7 +12516,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 182.88 151.13 0)
 			(effects
 				(font
@@ -12401,6 +12563,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 177.8 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mpn" "MOT90N03D"
+			(at 177.8 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12510,7 +12681,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 218.44 76.2 90)
 			(effects
 				(font
@@ -12518,7 +12689,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 218.44 78.74 0)
 			(effects
 				(font
@@ -12588,7 +12759,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 120.65 119.38 0)
 			(effects
 				(font
@@ -12658,7 +12829,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 129.54 105.41 90)
 			(effects
 				(font
@@ -12728,7 +12899,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 180.34 63.5 0)
 			(effects
 				(font
@@ -12798,7 +12969,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 231.14 143.51 90)
 			(effects
 				(font
@@ -12934,7 +13105,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 129.54 29.21 90)
 			(effects
 				(font
@@ -13060,7 +13231,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 62.23 113.03 90)
 			(effects
 				(font
@@ -13068,7 +13239,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 62.23 115.57 0)
 			(effects
 				(font
@@ -13138,7 +13309,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 180.34 24.13 0)
 			(effects
 				(font
@@ -13181,7 +13352,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 72.39 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13191,7 +13362,7 @@
 		(fields_autoplaced yes)
 		(uuid "d168559b-7a8c-4516-838b-75470329f6d3")
 		(property "Reference" "Q5"
-			(at 78.6438 191.7699 0)
+			(at 78.74 191.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13199,8 +13370,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 78.6438 194.3099 0)
+		(property "Value" "MOT90N03D"
+			(at 78.74 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13208,7 +13379,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 77.47 190.5 0)
 			(effects
 				(font
@@ -13255,6 +13426,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 72.39 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mpn" "MOT90N03D"
+			(at 72.39 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13440,7 +13620,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 180.34 68.58 90)
 			(effects
 				(font
@@ -13510,7 +13690,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 231.14 105.41 90)
 			(effects
 				(font
@@ -13580,7 +13760,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 74.93 182.88 90)
 			(effects
 				(font
@@ -13650,7 +13830,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 66.04 119.38 0)
 			(effects
 				(font
@@ -13694,16 +13874,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 317.5 86.36 180)
+		(at 317.5 83.82 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e0146a9f-f398-4cac-b9e7-3e1905609636")
 		(property "Reference" "J3"
-			(at 318.77 83.8199 0)
+			(at 318.77 86.3601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13712,7 +13892,7 @@
 			)
 		)
 		(property "Value" "C1,2"
-			(at 318.77 86.3599 0)
+			(at 318.77 83.8201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13720,8 +13900,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 317.5 86.36 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 317.5 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13730,7 +13910,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 317.5 86.36 0)
+			(at 317.5 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13739,7 +13919,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 317.5 86.36 0)
+			(at 317.5 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13790,7 +13970,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 317.5 124.46 0)
 			(effects
 				(font
@@ -13834,16 +14014,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 317.5 100.33 180)
+		(at 317.5 97.79 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e18d1a30-af52-4966-ab1c-32388697c35c")
 		(property "Reference" "J5"
-			(at 318.77 97.7899 0)
+			(at 318.77 100.3301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13852,7 +14032,7 @@
 			)
 		)
 		(property "Value" "C1,2"
-			(at 318.77 100.3299 0)
+			(at 318.77 97.7901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13860,8 +14040,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 317.5 100.33 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 317.5 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13870,7 +14050,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 317.5 100.33 0)
+			(at 317.5 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13879,7 +14059,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 317.5 100.33 0)
+			(at 317.5 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13904,16 +14084,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 317.5 113.03 180)
+		(at 317.5 110.49 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e255581d-951d-4956-b127-3d1b2f394f17")
 		(property "Reference" "J7"
-			(at 318.77 110.4899 0)
+			(at 318.77 113.0301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13922,7 +14102,7 @@
 			)
 		)
 		(property "Value" "C1,2"
-			(at 318.77 113.0299 0)
+			(at 318.77 110.4901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13930,8 +14110,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 317.5 113.03 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 317.5 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13940,7 +14120,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 317.5 113.03 0)
+			(at 317.5 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13949,7 +14129,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 317.5 113.03 0)
+			(at 317.5 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14000,7 +14180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 231.14 177.8 0)
 			(effects
 				(font
@@ -14060,7 +14240,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "240R"
 			(at 167.64 76.2 90)
 			(effects
 				(font
@@ -14068,7 +14248,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 167.64 78.74 0)
 			(effects
 				(font
@@ -14111,7 +14291,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "locallib:MOT90N03D")
 		(at 228.6 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14121,7 +14301,7 @@
 		(fields_autoplaced yes)
 		(uuid "f78b531f-ff65-45f4-8c8f-c98012da0427")
 		(property "Reference" "Q19"
-			(at 234.8538 191.7699 0)
+			(at 234.95 191.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14129,8 +14309,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 234.8538 194.3099 0)
+		(property "Value" "MOT90N03D"
+			(at 234.95 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14138,7 +14318,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 233.68 190.5 0)
 			(effects
 				(font
@@ -14192,6 +14372,15 @@
 				(hide yes)
 			)
 		)
+		(property "mpn" "MOT90N03D"
+			(at 228.6 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bd0ecc26-19a4-492a-8934-4f86f47ce08a")
 		)
@@ -14238,7 +14427,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 222.25 157.48 0)
 			(effects
 				(font
@@ -14374,7 +14563,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 66.04 157.48 0)
 			(effects
 				(font
@@ -14444,7 +14633,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 66.04 43.18 0)
 			(effects
 				(font
@@ -14472,10 +14661,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "c8c5c872-e1c8-4c07-b2d4-2eb44d84b30e")
+			(uuid "c8c5c872-e1c8-4c07-b2d4-2eb44d84b30f")
 		)
 		(pin "1"
-			(uuid "a1486c2b-158d-4cb1-9768-e20aafc85358")
+			(uuid "a1486c2b-158d-4cb1-9768-e20aafc85359")
 		)
 		(instances
 			(project ""
@@ -14514,7 +14703,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 180.34 182.88 90)
 			(effects
 				(font
@@ -14584,7 +14773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 74.93 100.33 0)
 			(effects
 				(font

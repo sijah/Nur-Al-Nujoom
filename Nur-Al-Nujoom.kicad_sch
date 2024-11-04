@@ -359,16 +359,6 @@
 			)
 			(uuid "b312ee6f-247a-4ab1-bdcf-a48e96410b2a")
 		)
-		(pin "PA2" input
-			(at 194.818 59.69 180)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-			)
-			(uuid "8cad1485-abaa-4552-a967-6fc786ce6f41")
-		)
 		(pin "VCC_12" input
 			(at 220.98 51.816 90)
 			(effects
@@ -378,26 +368,6 @@
 				(justify right)
 			)
 			(uuid "a7c63d33-bbc0-4bea-ab4c-85c48bb7054d")
-		)
-		(pin "PA0" input
-			(at 194.818 54.61 180)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-			)
-			(uuid "a0820dca-f974-46ed-b1a7-71b6cea2a991")
-		)
-		(pin "PA1" input
-			(at 194.818 57.15 180)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-			)
-			(uuid "99bb87ad-5304-40ad-aca9-14cb84c68518")
 		)
 		(pin "PA5" input
 			(at 194.818 67.31 180)
@@ -519,6 +489,36 @@
 			)
 			(uuid "dd5e706a-047a-40c7-93aa-ac9aab5d55c9")
 		)
+		(pin "PA11" input
+			(at 194.818 57.15 180)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify left)
+			)
+			(uuid "53b74c53-6dfc-42fd-b9c2-d5e76145aa10")
+		)
+		(pin "PA12" input
+			(at 194.818 59.69 180)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify left)
+			)
+			(uuid "92064014-f9a4-4d8b-9691-a919c458a671")
+		)
+		(pin "PB9" input
+			(at 194.818 54.61 180)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify left)
+			)
+			(uuid "f7789086-4a93-4f90-a670-ca47afd65c21")
+		)
 		(instances
 			(project "Nur-Al-Nujoom"
 				(path "/1adeaee6-8258-4bb9-adf4-b6d2d89a2512"
@@ -627,36 +627,6 @@
 				(justify right)
 			)
 			(uuid "58741f09-007a-4c4f-a031-57aeb33bdf32")
-		)
-		(pin "PA1" output
-			(at 173.99 57.15 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify right)
-			)
-			(uuid "15a92839-4fcb-488b-8aea-f6b2767247c9")
-		)
-		(pin "PA0" output
-			(at 173.99 54.61 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify right)
-			)
-			(uuid "487905c4-8228-4a98-b12b-b9e0ff2d2f31")
-		)
-		(pin "PA2" output
-			(at 173.99 59.69 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify right)
-			)
-			(uuid "63fad7eb-cb0e-49ce-9835-3e66cd6ee7f6")
 		)
 		(pin "PA3" output
 			(at 173.99 62.23 0)
@@ -767,6 +737,36 @@
 				(justify left)
 			)
 			(uuid "d7e18f7d-862b-43cd-80d5-71d7fe4791ee")
+		)
+		(pin "PA11" output
+			(at 173.99 57.15 0)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify right)
+			)
+			(uuid "bfd073db-8052-47d3-aeb5-00a6e2ead9fc")
+		)
+		(pin "PA12" output
+			(at 173.99 59.69 0)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify right)
+			)
+			(uuid "e6da873b-708b-4dd1-9627-6f8f6a2c8054")
+		)
+		(pin "PB9" output
+			(at 173.99 54.61 0)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify right)
+			)
+			(uuid "e34f6b32-1002-4342-8e98-e09f31313355")
 		)
 		(instances
 			(project "Nur-Al-Nujoom"
